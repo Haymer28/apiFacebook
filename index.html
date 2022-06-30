@@ -18,13 +18,13 @@
     <div id="app">
 
         <div class="favorites">
-            <transition-group name="list">
+            <transitiongroup name="list">
                 <div class="favorite" v-for="alias in TodosFavoritos" :key="alias.id">
                     <a @click.prevent="mostrarFavoritos(alias)" href="">
                         <img v-bind:src="alias.picture.data.url" alt="" class="favorite__avatar">
                     </a>
                 </div>
-            </transition-group>
+            </transitiongroup>
         </div>
 
         <article class="content">
@@ -34,7 +34,7 @@
                 <p class="text-3xl text-blue-300">{{message}}</p>
                 <br>
             </center>
-            <form class="search" v-on:submit.prevent="Buscar">
+            <form class="p-8 mt-2 flex items-center text-black-300 bg-gray-800" v-on:submit.prevent="Buscar">
                 <input v-model="busqueda" type="number" class="search__input" required placeholder="Buscar usuario">
                 <input type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                     value="Buscar">

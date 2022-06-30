@@ -33,7 +33,7 @@ const app = Vue.createApp({
     async Buscar(){
       this.result = this.error = null
       try{
-      const response = await fetch(API + this.busqueda +'?fields=id,name,picture&access_token=EAALpEZCTkzKABAE1jfUmTyUXJhUeuFwZC9hlsLSGkxh7hJHTCl72PD693VTgj9eacutxyFquHVh3RrNOV8e5QkKpVZAwR863LtA1xDLPewkw809DycbZAofQ4SVKeqOrsgHTfRKpQ3STYoNbdGhFOJtZCjEHyUjc4KKeFdg11K7ewID6Cj4SLvdyZBpeUyGEa3B0nxnyWpeQZDZD')
+      const response = await fetch(API + this.busqueda +'?fields=id,name,picture&access_token=EAALpEZCTkzKABAGO78SsUZAOnAiGVrjTkQ6zowk45STlN0TN7AiCzj3eEvSLZAYkjzmuOeZBEIE6pk5rO0MCLgrY7ZA8kKXyhxg6ebjFdclZCFVbRZAUWvqnH0aDyMDKEneZA66dgHxh5Ijz0LzzIvp9zwq7SXK0vUshZB3ZCy6ZCnYEUHeloAb3cloDLv0mSZA5YSvEW4vG30Dl6curCvehgqHVZARFWJy6U6wXGYDhA29NSvg21IMwU0vtd')
       if(!response.ok) throw new Error("Usuario no encontrado")
       const data = await response.json()
       console.log(data)

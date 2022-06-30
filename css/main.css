@@ -76,9 +76,10 @@ body {
 
 .result__avatar {
   grid-area: avatar;
-  max-width: 6rem;
+  width: 100px;
   height: auto;
-  border-radius: 1rem;
+  border-radius: 5rem;
+  margin-left:225px;
 }
 
 .result__bio {
